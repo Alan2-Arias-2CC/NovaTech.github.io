@@ -3,10 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi primera página</title>
+  <title>NovaTech | Servicios técnicos para PC y laptops</title>
+  <meta name="description" content="Respaldo de datos, instalación de software y sistemas operativos, y mantenimiento de PC y laptops. Arma tu pedido y envíalo por WhatsApp.">
+  <meta name="theme-color" content="#f4f7ff">
+  <link rel="icon" href="https://i.ibb.co/bgnnVDFQ/Whats-App-Image-2026-10-07-at-11-36-54-PM.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>¡Hola, mundo!</h1>
-  <p>Esta es mi página en GitHub Pages.</p>
+
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="NovaTech, inicio">
+    <img class="brand-mark" src="https://i.ibb.co/bgnnVDFQ/Whats-App-Image-2026-10-07-at-11-36-54-PM.jpg" alt="" width="40" height="40">
+    <span class="brand-name">NovaTech</span>
+  </a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><span></span></button>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#ayuda">¿Qué necesitas?</a>
+    <a href="#proceso">Cómo trabajamos</a>
+    <a href="#faq">Preguntas</a>
+    <a class="btn btn-small btn-wa" data-wa="Hola NovaTech, quiero consultar sobre sus servicios." href="#contacto" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <p class="badge">Servicio técnico para PC y laptops</p>
+      <h1>Tu equipo rápido, ordenado y con tus datos a salvo</h1>
+      <p class="lead">Respaldamos, instalamos y damos mantenimiento. Arma tu pedido aquí abajo y lo enviamos directo a WhatsApp para coordinar el día.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#servicios">Armar mi pedido</a>
+        <a class="btn btn-ghost" data-wa="Hola NovaTech, quiero consultar sobre sus servicios." href="#contacto" target="_blank" rel="noopener">Consultar primero</a>
+      </div>
+    </div>
+
+    <aside class="price-panel" aria-label="Lista rápida de precios">
+      <div class="panel-bar" aria-hidden="true"><i></i><i></i><i></i><span>precios.bob</span></div>
+      <ul>
+        <li><a href="#respaldo"><span>Respaldo de datos</span><strong>BOB 30</strong></a></li>
+        <li><a href="#software"><span>Instalación de software</span><strong>BOB 30</strong></a></li>
+        <li><a href="#sistema"><span>Windows / Linux</span><strong>BOB 50</strong></a></li>
+        <li><a href="#mantenimiento"><span>Mantenimiento general</span><strong>BOB 100</strong></a></li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="band" aria-label="Ventajas">
+    <ul class="band-list">
+      <li><strong>Precio fijo</strong><span>Sabes cuánto pagas antes de pedir.</span></li>
+      <li><strong>Atención directa</strong><span>Hablas con quien hará el trabajo.</span></li>
+      <li><strong>Servicios combinables</strong><span>Suma respaldo a cualquier otro servicio.</span></li>
+    </ul>
+  </section>
+
+  <section class="help" id="ayuda">
+    <h2 class="section-title">¿Qué necesitas?</h2>
+    <p class="section-sub">Toca lo que te pasa y agregamos el servicio correcto a tu pedido.</p>
+    <div class="chips" role="group" aria-label="Necesidades comunes">
+      <button class="chip" type="button" aria-pressed="false" data-target="mantenimiento">Mi equipo está lento</button>
+      <button class="chip" type="button" aria-pressed="false" data-target="respaldo">No quiero perder mis archivos</button>
+      <button class="chip" type="button" aria-pressed="false" data-target="sistema">Quiero instalar Windows o Linux</button>
+      <button class="chip" type="button" aria-pressed="false" data-target="software">Necesito instalar programas</button>
+    </div>
+  </section>
+
+  <section class="catalog" id="servicios">
+    <h2 class="section-title">Arma tu pedido</h2>
+    <p class="section-sub">Marca los servicios que necesitas. Abajo verás el total y podrás enviarlo por WhatsApp.</p>
+
+    <div class="grid">
+      <article class="card" id="respaldo" data-name="Respaldo de datos" data-price="30">
+        <div class="card-media">
+          <svg class="ph" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-7.95A6 6 0 0 1 18 9.5a4.25 4.25 0 0 1-.5 8.5H7Z"/><path d="M12 11v5m0 0-2-2m2 2 2-2"/></svg>
+          <img src="images/respaldo.png" alt="Respaldo de datos" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="card-body">
+          <h3>Respaldo de datos</h3>
+          <p>Copiamos tus fotos y documentos importantes a la nube o a un disco externo.</p>
+          <div class="card-foot"><span class="price">BOB 30.00</span>
+            <label class="pick"><input type="checkbox"><span>Agregar</span></label></div>
+        </div>
+      </article>
+
+      <article class="card" id="software" data-name="Instalación de software" data-price="30">
+        <div class="card-media">
+          <svg class="ph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M9 10l-2 2 2 2M15 10l2 2-2 2"/></svg>
+          <img src="images/software.png" alt="Instalación de software" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="card-body">
+          <h3>Instalación de software</h3>
+          <p>Instalamos y configuramos tus programas: oficina, diseño, antivirus y más.</p>
+          <div class="card-foot"><span class="price">BOB 30.00</span>
+            <label class="pick"><input type="checkbox"><span>Agregar</span></label></div>
+        </div>
+      </article>
+
+      <article class="card" id="sistema" data-name="Instalación de Windows/Linux" data-price="50">
+        <div class="card-media">
+          <svg class="ph" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>
+          <img src="images/sistema-operativo.png" alt="Instalación de Windows o Linux" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="card-body">
+          <h3>Instalación de Windows / Linux</h3>
+          <p>Instalamos el sistema, configuramos controladores y lo dejamos listo para usar.</p>
+          <div class="card-foot"><span class="price">BOB 50.00</span>
+            <label class="pick"><input type="checkbox"><span>Agregar</span></label></div>
+        </div>
+      </article>
+
+      <article class="card" id="mantenimiento" data-name="Mantenimiento general" data-price="100">
+        <div class="card-media">
+          <svg class="ph" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6Z"/></svg>
+          <img src="images/mantenimiento.png" alt="Mantenimiento general" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="card-body">
+          <h3>Mantenimiento general</h3>
+          <p>Limpieza, optimización del sistema y liberación de espacio para equipos lentos.</p>
+          <div class="card-foot"><span class="price">BOB 100.00</span>
+            <label class="pick"><input type="checkbox"><span>Agregar</span></label></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="summary" id="resumen">
+      <div class="summary-main">
+        <h3>Tu pedido</h3>
+        <p class="empty" id="sumEmpty">Aún no elegiste servicios. Marca "Agregar" en las tarjetas de arriba.</p>
+        <ul class="sum-list" id="sumList"></ul>
+        <p class="sum-total">Total <strong id="sumTotal">BOB 0</strong></p>
+      </div>
+      <div class="summary-form">
+        <label class="field"><span>Tu nombre (opcional)</span>
+          <input type="text" id="fName" autocomplete="name" placeholder="Ej. María"></label>
+        <fieldset class="field"><legend>Tu equipo</legend>
+          <label class="opt"><input type="radio" name="equipo" value="laptop" checked><span>Laptop</span></label>
+          <label class="opt"><input type="radio" name="equipo" value="PC de escritorio"><span>PC de escritorio</span></label>
+        </fieldset>
+        <label class="field"><span>¿Qué le pasa? (opcional)</span>
+          <textarea id="fNotes" rows="3" placeholder="Ej. Tarda mucho en encender"></textarea></label>
+        <a class="btn btn-primary btn-block" id="sumLink" href="#contacto" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="proceso">
+    <h2 class="section-title">Cómo trabajamos</h2>
+    <ol class="steps">
+      <li><h3>Armas tu pedido</h3><p>Marcas los servicios y envías el resumen por WhatsApp.</p></li>
+      <li><h3>Coordinamos</h3><p>Confirmamos el día y la forma de entrega del equipo.</p></li>
+      <li><h3>Listo para usar</h3><p>Recibes tu PC o laptop funcionando y con tus datos a salvo.</p></li>
+    </ol>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2 class="section-title">Preguntas frecuentes</h2>
+    <details><summary>¿Cómo pido un servicio?</summary><p>Marca los servicios en "Arma tu pedido" y pulsa el botón de WhatsApp. Te llegará el resumen con el total.</p></details>
+    <details><summary>¿Puedo combinar varios servicios?</summary><p>Sí. Por ejemplo, un respaldo antes de instalar un sistema operativo. El total se calcula solo.</p></details>
+    <details><summary>¿Qué incluye el mantenimiento general?</summary><p>Mantenimiento de PC y laptops, optimización del sistema y liberación de espacio.</p></details>
+    <details><summary>¿Qué sistemas operativos instalan?</summary><p>Windows y Linux. Cuéntanos qué versión prefieres al escribirnos.</p></details>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="contact-inner">
+      <h2>¿Dudas sobre tu equipo?</h2>
+      <p>Cuéntanos qué le pasa y te orientamos por WhatsApp. También puedes escribirnos al <strong>+591 69035563</strong>.</p>
+      <a class="btn btn-primary btn-large" data-wa="Hola NovaTech, necesito ayuda con mi equipo." href="#contacto" target="_blank" rel="noopener">Abrir WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><p>&copy; <span id="year">2026</span> NovaTech. Precios en bolivianos (BOB).</p></footer>
+
+<div class="order-bar" id="orderBar" hidden>
+  <div class="order-info"><strong id="orderCount">0 servicios</strong><span id="orderTotal">BOB 0</span></div>
+  <a class="btn btn-primary" id="orderLink" href="#contacto" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+</div>
+
+<script>
+  // Número de WhatsApp: código de país + número, sin "+" ni espacios.
+  const WHATSAPP_NUMBER = "59169035563";
+  const wa = t => "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(t);
+  const $ = id => document.getElementById(id);
+
+  document.querySelectorAll("[data-wa]").forEach(a => a.href = wa(a.dataset.wa));
+  $("year").textContent = new Date().getFullYear();
+
+  // Menú móvil
+  const menuBtn = $("menuBtn"), nav = $("nav");
+  const setMenu = open => { nav.classList.toggle("open", open); menuBtn.setAttribute("aria-expanded", open); };
+  menuBtn.addEventListener("click", () => setMenu(!nav.classList.contains("open")));
+  nav.addEventListener("click", e => { if (e.target.closest("a")) setMenu(false); });
+
+  // Pedido
+  const cards = [...document.querySelectorAll(".card")];
+  const chips = [...document.querySelectorAll(".chip")];
+  const box = c => c.querySelector("input");
+
+  function message(chosen, total) {
+    const name = $("fName").value.trim();
+    const equipo = document.querySelector('input[name="equipo"]:checked').value;
+    const notes = $("fNotes").value.trim();
+    let t = "Hola NovaTech" + (name ? ", soy " + name : "") + ". Quiero pedir:\n";
+    t += chosen.map(c => "- " + c.dataset.name + " (BOB " + c.dataset.price + ")").join("\n");
+    t += "\nTotal: BOB " + total + "\nEquipo: " + equipo;
+    if (notes) t += "\nProblema: " + notes;
+    return t;
+  }
+
+  function update() {
+    const chosen = cards.filter(c => box(c).checked);
+    const total = chosen.reduce((s, c) => s + Number(c.dataset.price), 0);
+    const link = message(chosen, total);
+    const url = wa(link);
+
+    cards.forEach(c => c.classList.toggle("is-picked", box(c).checked));
+    chips.forEach(ch => ch.setAttribute("aria-pressed", box($(ch.dataset.target)).checked));
+
+    $("sumEmpty").hidden = chosen.length > 0;
+    $("sumTotal").textContent = "BOB " + total;
+    const list = $("sumList");
+    list.replaceChildren(...chosen.map(c => {
+      const li = document.createElement("li");
+      const n = document.createElement("span"); n.textContent = c.dataset.name;
+      const p = document.createElement("b"); p.textContent = "BOB " + c.dataset.price;
+      const x = document.createElement("button");
+      x.type = "button"; x.textContent = "Quitar"; x.className = "rm";
+      x.setAttribute("aria-label", "Quitar " + c.dataset.name);
+      x.onclick = () => { box(c).checked = false; update(); };
+      li.append(n, p, x); return li;
+    }));
+
+    [$("sumLink"), $("orderLink")].forEach(a => {
+      a.href = chosen.length ? url : "#servicios";
+      a.toggleAttribute("target", chosen.length > 0);
+      a.setAttribute("aria-disabled", chosen.length === 0);
+    });
+
+    $("orderBar").hidden = chosen.length === 0;
+    document.body.classList.toggle("has-order", chosen.length > 0);
+    $("orderCount").textContent = chosen.length + (chosen.length === 1 ? " servicio" : " servicios");
+    $("orderTotal").textContent = "BOB " + total;
+  }
+
+  cards.forEach(c => box(c).addEventListener("change", update));
+  chips.forEach(ch => ch.addEventListener("click", () => {
+    const b = box($(ch.dataset.target)); b.checked = !b.checked; update();
+  }));
+  document.querySelectorAll("#fName,#fNotes,input[name=equipo]").forEach(i => i.addEventListener("input", update));
+  update();
+</script>
 </body>
 </html>
